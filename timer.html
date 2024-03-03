@@ -1,0 +1,79 @@
+<html>
+    <style>
+          .mydiv{
+            width: 300px;
+            height: 30px;
+            background-color: yellow;
+
+            }
+
+    </style>
+  
+
+    <body>
+
+        <button onclick="delayAlert()">click me </button>
+        <button onclick="startTimer()">starttimer </button>
+        <button onclick="stopTimer()">stop timer </button>
+        <button onclick="blink()">start blinking </button>
+        <div id="time">
+            
+        </div>
+
+        <div class="mydiv" id="blinking">
+
+        </div>
+
+
+    </body>
+
+    <script>
+    var mytimer
+        function startTimer(){
+            var count=0
+          mytimer=setInterval(()=>{
+                count++
+                document.querySelector("#time").textContent=count
+            },1000) //2
+       
+        }
+
+        function stopTimer(){
+            clearTimeout(mytimer)
+        }
+
+        function delayAlert(){
+
+            setTimeout(()=>{
+                alert("I am delayed")
+            },3000)
+
+            
+        }
+
+        function blink(){
+
+            setInterval(()=>{
+
+                if(document.querySelector("#blinking").style.backgroundColor=='yellow'){
+                    document.querySelector("#blinking").style.backgroundColor='red'
+                }else{
+                    document.querySelector("#blinking").style.backgroundColor='yellow'
+                }
+
+
+            },500)
+
+
+
+        }
+
+
+        // function myalert(){
+        //     alert("I am delayed")
+        // }
+
+    </script>
+
+
+</html>

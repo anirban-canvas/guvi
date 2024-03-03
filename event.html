@@ -1,0 +1,48 @@
+<html>
+    <body>
+
+        <!-- <input onblur="validation()" onmouseover="highlight()" id="myinput" value="" type="text">
+        <button onclick="alartSystem()">click me</button> -->
+
+        <input  id="myinput" value="" type="text">
+        <button >click me</button>
+        <button onclick="triggerConfirm()"> confirm </button>
+        <button onclick="triggerPrompt()"> prompt </button>
+    </body>
+
+
+    <script>
+
+
+
+        document.querySelector('button').addEventListener('click',alartSystem)
+        document.querySelector("#myinput").addEventListener('mouseover',highlight)
+        document.querySelector("#myinput").addEventListener('blur',validation)
+
+        function triggerPrompt(){
+            const name=prompt("enter you name")
+            alert(name)
+        }
+
+        function triggerConfirm(){
+          const flag=confirm("Are you sure")
+          alert(flag)
+        }
+
+
+        function alartSystem(){
+           const myinput= document.querySelector("#myinput").value
+            alert(myinput)
+        }
+        function highlight(){
+            document.querySelector("#myinput").focus()
+        }
+        function validation(){
+            const myinput= document.querySelector("#myinput").value
+            if(myinput==""){
+                document.querySelector("#myinput").style.backgroundColor='red'
+            }
+        }
+    </script>
+
+</html>
