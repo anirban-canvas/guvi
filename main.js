@@ -1,3 +1,5 @@
+ 
+ import test from 'test.json'
  const body=document.body
 // //body.innerHTML="this is my first html"
 
