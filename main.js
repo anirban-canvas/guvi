@@ -3,11 +3,11 @@
  const body=document.body
 // //body.innerHTML="this is my first html"
 
- const mydiv=document.createElement('div');
- mydiv.innerHTML="<strong>hellow this is form div</strong>"
+//  const mydiv=document.createElement('div');
+//  mydiv.innerHTML="<strong>hellow this is form div</strong>"
 //  body.appendChild(mydiv)
 // const mdiv=document.querySelectorAll(".cldiv")
-// const mdivArr=Array.from(mdiv)
+// const mdivArr=   
 // console.log(mdivArr)
 // console.log(mdivArr[0].innerHTML)
 // console.log(mdivArr[1].innerHTML)

@@ -1,0 +1,32 @@
+{
+  "students": [
+    {
+      "id": "b1b1",
+      "fname": "test",
+      "lname": "testname",
+      "class": "ss",
+      "total": "345"
+    },
+    {
+      "id": "7f6a",
+      "fname": "Stephen",
+      "lname": "Raj",
+      "class": "XI",
+      "total": "12345"
+    },
+    {
+      "id": "a68f",
+      "fname": "TEST",
+      "lname": "TEST123",
+      "class": "v",
+      "total": "3000"
+    },
+    {
+      "id": "1c00",
+      "fname": "ANIRBAN",
+      "lname": "ANIRBAN",
+      "class": "xi",
+      "total": "123"
+    }
+  ]
+}

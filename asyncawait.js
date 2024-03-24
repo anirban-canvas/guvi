@@ -31,17 +31,15 @@ let C=()=>{
     })
 }
 
-A()
-.then(()=>{
-   return B()
-})
-.then(()=>{
-    return C()
-})
-.catch((err)=>{
-    console.log(err)
-})
+async function main(){
+    try{
+        await A()
+        await B()
+        await C()
 
-
-
-
+    }catch(err){
+        console.log(err)
+    }
+  
+}
+main()

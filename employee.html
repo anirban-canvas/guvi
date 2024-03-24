@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <style>
+            .item{
+    display: inline-block;
+    height: 30px;
+    width: 286px;
+    background-color: aquamarine;
+    cursor: pointer;
+}
+.result{
+    margin: 22px;
+}
+.form{
+    margin: 22px;
+}
+.input{
+  
+    margin: 22px;
+
+}
+.status{
+    color: green;
+}
+.header-item{
+    display: inline-block;
+    height: 70px;
+    width: 200px;
+    border: 1px solid;
+}
+.data-item{
+    display: inline-block;
+    height: 70px;
+    width: 200px;
+    border: 1px solid;
+}
+.data{
+    margin-top: 12px;
+}
+.row{
+    margin-top: 5px;
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="main">
+        <div class="menu">
+            <div class="item">Create</div>
+            <div onclick="getData()" class="item">View</div>
+        </div>
+        <div class="result">
+        <div class="form">
+            <div id="status" class="status"></div>
+            
+            <div class="input">
+                <input id="fname" placeholder="Enter your firstname" type="text"></div>
+            <div class="input">
+                <input id="lname" placeholder="Enter your lastname" type="text"></div>
+            <div class="input">
+                <input id="class" placeholder="Enter your class" type="text"></div>
+            <div class="input">
+                <input id="total" placeholder="Enter your total" type="text"></div>
+            <div class="input">
+                <button onclick="saveData()"> Create </button>
+            </div>
+        </div>
+        <div class="table">
+            <div class="parent">
+                <div class="header">
+                    <div class="header-item">Id</div>
+                    <div class="header-item">Name</div>
+                    <div class="header-item">Class</div>
+                    <div class="header-item">total</div>
+                    <div class="header-item">Action</div>
+                </div>
+                <div id="data" class="data">
+                   
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+    <script src="apiscript.js"></script>
+</html>
